@@ -206,6 +206,11 @@ footer {
   body {
     overflow-x: hidden;
   }
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+  }
 
   .hero h1 {
     font-size: 2rem;
