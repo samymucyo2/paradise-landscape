@@ -221,6 +221,7 @@ footer {
   .body {
     font-size: 0.9rem;
     padding: 3rem;
+    margin: 0 auto;
   }
   .stats,
   .gallery,
