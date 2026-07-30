@@ -236,6 +236,10 @@ footer {
   }
   .hero h1 {
     font-size: 3rem;
+    line-height: 1.15;
+    padding: 3rem;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 .split {
