@@ -17,6 +17,10 @@ body {
   color: #222;
   background: var(--light);
   line-height: 1.7;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
 }
 header {
   position: fixed;
