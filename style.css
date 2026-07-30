@@ -199,6 +199,24 @@ footer {
   margin-top: 80px;
 }
 
+@media only screen and (max-width: 440px) and (max-height: 956px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .body {
     font-size: 0.9rem;
