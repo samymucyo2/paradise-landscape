@@ -200,6 +200,10 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .body {
+    font-size: 0.9rem;
+    padding: 3rem;
+  }
   .stats,
   .gallery,
   .split {
