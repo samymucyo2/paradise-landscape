@@ -3,30 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>GreenScape Masterclass</title>
+    <title>Paradise Landscapes</title>
     <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="navbar.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <img
-              src="paradise project img/Screenshot 2026-07-30 110243.png"
-              alt="Company Logo"
-            />
-          </div>
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+ <header class="pl-navbar-header">
 
+    <div class="pl-navbar-container">
+
+        <!-- LOGO -->
+        <a href="index.html" class="pl-navbar-logo">
+            <img
+                src="paradise project img/Screenshot 2026-07-30 110243.png"
+                alt="Paradise Landscapes LTD"
+            >
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+        <nav class="pl-navbar-desktop">
+
+            <a href="index.html" class="pl-nav-active">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="#services">
+                Our Services
+            </a>
+
+            <a href="#projects">
+                Our Projects
+            </a>
+
+            <a href="#contact">
+                Contact Us
+            </a>
+
+        </nav>
+
+
+        <!-- QUOTE BUTTON -->
+        <a href="#contact" class="pl-navbar-quote">
+            Request Quote
+        </a>
+
+
+        <!-- MOBILE BUTTON -->
+        <button
+            type="button"
+            class="pl-navbar-toggle"
+            id="plNavbarToggle"
+            aria-label="Open navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <div class="pl-navbar-mobile" id="plNavbarMobile">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About Us
+        </a>
+
+        <a href="#services">
+            Our Services
+        </a>
+
+        <a href="#projects">
+            Our Projects
+        </a>
+
+        <a href="#contact">
+            Contact Us
+        </a>
+
+        <a href="#contact" class="pl-navbar-mobile-quote">
+            Request Quote
+        </a>
+
+    </div>
+
+</header>
     <section class="hero">
       <div>
         <h1>Transforming Outdoor Spaces <br />into Living Paradise</h1>
@@ -61,7 +132,7 @@
       </div>
     </div>
 
-    <section class="container">
+    <section class="container" id = "services">
       <div class="section-title"><h2>Our Services</h2></div>
       <div class="cards">
         <div class="card">
@@ -116,7 +187,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="projects">
       <div class="section-title"><h2>Sample Projects</h2></div>
       <div class="gallery">
         <img src="paradise project img/IMG-20260729-WA0042.jpg" />
@@ -164,7 +235,8 @@
 </a>
         
     </section>
-
     <footer>© 2026 GreenScape Masterclass Edition</footer>
+    
+    <script src="navbar.js"></script>
   </body>
 </html>

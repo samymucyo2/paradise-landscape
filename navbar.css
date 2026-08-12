@@ -1,0 +1,435 @@
+/* =====================================================
+   PARADISE LANDSCAPES
+   GLOBAL NAVBAR
+===================================================== */
+
+/* HEADER */
+
+.pl-navbar-header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 14px 4%;
+
+  z-index: 10000;
+}
+
+/* MAIN BAR */
+
+.pl-navbar-container {
+  width: 100%;
+
+  max-width: 1250px;
+
+  min-height: 68px;
+
+  margin: 0 auto;
+
+  padding: 9px 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 14px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.09);
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.pl-navbar-logo {
+  display: block;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+.pl-navbar-logo img {
+  display: block;
+
+  width: 145px;
+
+  height: auto;
+}
+
+/* =====================================================
+   DESKTOP NAV
+===================================================== */
+
+.pl-navbar-desktop {
+  margin-left: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+.pl-navbar-desktop a {
+  display: block;
+
+  padding: 10px 13px;
+
+  color: #26342b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  border-radius: 7px;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.pl-navbar-desktop a:hover {
+  color: #ffffff;
+
+  background: #1b7444;
+}
+
+/* ACTIVE PAGE */
+
+.pl-navbar-desktop a.pl-nav-active {
+  color: #ffffff;
+
+  background: #1b7444;
+}
+
+/* =====================================================
+   QUOTE BUTTON
+===================================================== */
+
+.pl-navbar-quote {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  margin-left: 15px;
+
+  padding: 12px 18px;
+
+  color: #ffffff;
+
+  background: #1b7444;
+
+  border-radius: 8px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.pl-navbar-quote:hover {
+  background: #12552f;
+
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   MOBILE BUTTON
+===================================================== */
+
+.pl-navbar-toggle {
+  display: none;
+
+  width: 44px;
+
+  height: 44px;
+
+  margin-left: auto;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #1b7444;
+
+  cursor: pointer;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.pl-navbar-toggle span {
+  display: block;
+
+  width: 21px;
+
+  height: 2px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.pl-navbar-mobile {
+  display: none;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+  .pl-navbar-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+  }
+
+  .pl-navbar-container {
+    width: 100%;
+    min-height: 60px;
+    padding: 7px 12px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 12px;
+  }
+
+  .pl-navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .pl-navbar-logo img {
+    width: 115px;
+    height: auto;
+    display: block;
+  }
+
+  /* Hide desktop navigation */
+
+  .pl-navbar-desktop,
+  .pl-navbar-quote {
+    display: none;
+  }
+
+  /* ===============================
+       HAMBURGER BUTTON
+    =============================== */
+
+  .pl-navbar-toggle {
+    width: 42px;
+    height: 42px;
+
+    margin-left: auto;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 5px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #1b7444;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .pl-navbar-toggle span {
+    display: block;
+
+    width: 20px;
+    height: 2px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    transition:
+      transform 0.25s ease,
+      opacity 0.2s ease;
+  }
+
+  /* ===============================
+       MOBILE MENU
+    =============================== */
+
+  .pl-navbar-mobile {
+    position: absolute;
+
+    top: calc(100% + 6px);
+    left: 12px;
+    right: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(-8px);
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+  .pl-navbar-mobile.pl-mobile-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateY(0);
+  }
+
+  .pl-navbar-mobile a {
+    display: block;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    color: #26342b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    transition:
+      background 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .pl-navbar-mobile a:hover,
+  .pl-navbar-mobile a:active {
+    color: #ffffff;
+    background: #1b7444;
+  }
+
+  /* REQUEST QUOTE */
+
+  .pl-navbar-mobile .pl-navbar-mobile-quote {
+    margin-top: 5px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    background: #1b7444;
+  }
+
+  /* ===============================
+       HAMBURGER → X
+    =============================== */
+
+  .pl-navbar-toggle.pl-toggle-active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .pl-navbar-toggle.pl-toggle-active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .pl-navbar-toggle.pl-toggle-active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 400px) {
+  .pl-navbar-header {
+    padding: 8px 9px;
+  }
+
+  .pl-navbar-container {
+    min-height: 57px;
+    padding: 6px 10px;
+  }
+
+  .pl-navbar-logo img {
+    width: 105px;
+  }
+
+  .pl-navbar-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .pl-navbar-mobile {
+    left: 9px;
+    right: 9px;
+  }
+}
